@@ -63,7 +63,7 @@ section {
     transition: font-size 0.5s; }
 
 /* Header Element */
-header #checkBreakpointContainer {
+/* header #checkBreakpointContainer {
   width: 3em;
   height: 3em;
   position: fixed;
@@ -75,7 +75,7 @@ header #checkBreakpointContainer {
     width: 100%;
     height: 100%;
     border-radius: 0.3em;
-    background-color: red; }
+    background-color: red; } */
 
 /* Body Element */
 body {
@@ -513,8 +513,8 @@ footer {
     font-size: 3.5em; }
 
   /* Header Element - [1st BREAK] */
-  header #checkBreakpointContainer #checkBreakpoint {
-    background-color: blue; }
+  /* header #checkBreakpointContainer #checkBreakpoint {
+    background-color: blue; } */
 
   /* Body Element - [1st BREAK] */
   body {
@@ -623,15 +623,15 @@ footer {
 /* 2nd BREAKPOINT */
 @media screen and (min-width: 920px) {
   /* Header Element - [2nd BREAK] */
-  header #checkBreakpointContainer #checkBreakpoint {
-    background-color: green; }
+  /* header #checkBreakpointContainer #checkBreakpoint {
+    background-color: green; } */
 
   /* [END OF]: 2nd BREAKPOINT */ }
 /* 3rd BREAKPOINT */
 @media screen and (min-width: 1200px) {
   /* Header Element - [3rd BREAK] */
-  header #checkBreakpointContainer #checkBreakpoint {
-    background-color: yellow; }
+  /* header #checkBreakpointContainer #checkBreakpoint {
+    background-color: yellow; } */
 
   /* Body Element - [3rd BREAK] */
   body {
