@@ -1,0 +1,707 @@
+/* SASS/SCSS document created by Alex Clarke */
+/* Variables */
+/* Breakpoints */
+/* Colours */
+/* Dimensions */
+/* Animations */
+@import url("https://fonts.googleapis.com/css?family=Arimo:700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+@keyframes fadeInAnim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes animatetop {
+  from {
+    top: -100em;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+@-webkit-keyframes animatetop {
+  from {
+    top: -100em;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+@keyframes animateHeightDividerHeight {
+  from {
+    height: 0;
+    width: 0;
+    opacity: 0; }
+  to {
+    height: 4em;
+    width: 100%;
+    opacity: 1; } }
+/* Mixins - [Sass] */
+/* Fonts */
+/* HTML Element */
+html {
+  height: 100%; }
+
+/* Header Element */
+/* Section Element */
+section {
+  padding: 7em 1em;
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  animation: fadeInAnim ease-in 1.2s; }
+  section .sectionTitle {
+    text-align: center;
+    font-size: 2.4em;
+    font-family: "Arimo", sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    word-break: break-word;
+    margin: 0;
+    color: #515151;
+    animation: fadeInAnim ease-in 1.8s;
+    transition: font-size 0.5s; }
+
+/* Header Element */
+header #checkBreakpointContainer {
+  width: 3em;
+  height: 3em;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  margin: 1em; }
+  header #checkBreakpointContainer #checkBreakpoint {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3em;
+    background-color: red; }
+
+/* Body Element */
+body {
+  padding: 0;
+  margin: 0;
+  /* Divider Elements */
+  /* Welcome Section */
+  /* Projects Section */
+  /* Skills Section */
+  /* Education Section */
+  /* Contact Section */
+  /* Modal */
+  /* [END OF]: Body Element */ }
+  body .dividerSection {
+    padding: 0;
+    margin: 0; }
+    body .dividerSection .dividerSectionElements {
+      width: 100%; }
+      body .dividerSection .dividerSectionElements .sectionDivider {
+        height: 4em;
+        animation: animateHeightDividerHeight ease-in 0.7s;
+        max-width: 100%;
+        background-image: radial-gradient(circle at left, #c2eefa 10%, #5fedbc 40%, #5fdeed 60%, #334e73 100%); }
+      body .dividerSection .dividerSectionElements #bottomSectionDivider {
+        background-image: radial-gradient(circle at right, #c2eefa 10%, #5fedbc 40%, #5fdeed 60%, #334e73 100%); }
+  body #welcomeSection {
+    background-image: radial-gradient(white, #f8f8f8);
+    transition: padding 0.5s;
+    /* [END OF]: Welcome Section */ }
+    body #welcomeSection #logoTitleTextContainer {
+      margin: 0 auto;
+      width: 14em;
+      animation: fadeInAnim ease-in 1.8s;
+      transition: transform 1s, width 0.5s; }
+      body #welcomeSection #logoTitleTextContainer:hover {
+        transform: rotate(-5deg); }
+      body #welcomeSection #logoTitleTextContainer .logoTable {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        border-left: 2px solid #999999;
+        border-right: 2px solid #999999;
+        font-size: 2em;
+        padding: 0 0.5em;
+        transition: font-size 0.5s; }
+      body #welcomeSection #logoTitleTextContainer #logoTopTable {
+        font-weight: 900;
+        color: #bfbfbf; }
+      body #welcomeSection #logoTitleTextContainer .logoScore {
+        height: 2px;
+        margin: 0.5em auto;
+        background-color: #999999;
+        border-radius: 0.5em;
+        width: 90%; }
+      body #welcomeSection #logoTitleTextContainer #logoBottomTable {
+        font-weight: 400;
+        color: #d5d5d5; }
+    body #welcomeSection #welcomeDescriptionTextContainer {
+      margin: 4.5em 2em 0 2em; }
+      body #welcomeSection #welcomeDescriptionTextContainer #welcomeDescriptionText {
+        text-align: center;
+        font-size: 1.4em;
+        word-break: break-word;
+        color: #515151;
+        font-family: "PT Sans", sans-serif;
+        transition: font-size 0.5s; }
+  body #projectsSection {
+    background-image: radial-gradient(white, #f8f8f8);
+    transition: padding 0.5s;
+    /* Projects Section Body Elements Container */
+    /* [END OF]: Projects Section */ }
+    body #projectsSection #projectsSectionBodyElementsContainer {
+      margin: 3em 0;
+      z-index: 0;
+      /* [END OF]: Projects Section Body Elements Container */ }
+      body #projectsSection #projectsSectionBodyElementsContainer .projectsContainer {
+        padding: 0;
+        margin: 0; }
+      body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer {
+        border-bottom: solid 2px green;
+        text-align: center;
+        cursor: pointer; }
+        body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer .projectsTabExpandIcon {
+          display: inline-block;
+          font-family: "Arimo", sans-serif;
+          font-size: 1.6em;
+          color: #515151;
+          transition: font-size 0.5s; }
+        body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer .projectsTabHeaderText {
+          font-family: "PT Sans", sans-serif;
+          display: inline-block;
+          font-size: 1.6em;
+          margin-left: 0.3em;
+          color: #515151;
+          transition: font-size 0.5s; }
+      body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer {
+        padding: 1em;
+        overflow: hidden;
+        transition: opacity 1s, max-height 1.3s;
+        opacity: 0;
+        max-height: 0; }
+        body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel {
+          border: solid 1px black;
+          margin: 4em 0;
+          padding: 0;
+          transition: background-color 0.5s; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel:hover {
+            cursor: pointer;
+            background-color: #e6e6e6; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelImageContainer {
+            border-bottom: solid 1px black;
+            width: 100%;
+            max-height: 25em;
+            overflow: hidden;
+            margin: 0;
+            padding: 0; }
+            body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelImageContainer .panelImage {
+              width: 100%;
+              height: auto;
+              padding: 0;
+              margin: 0;
+              display: block; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelTextContainer {
+            margin: 1em;
+            padding: 1em;
+            text-align: center; }
+            body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelTextContainer .panelTitle {
+              margin: 0;
+              padding: 0;
+              text-decoration: underline;
+              font-weight: bold;
+              font-size: 1.2em;
+              font-family: "Arimo", sans-serif;
+              transition: font-size 0.5s; }
+            body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelTextContainer .panelParagraph {
+              text-align: center;
+              font-family: "PT Sans", sans-serif;
+              font-size: 1.1em;
+              transition: font-size 0.5s; }
+    body #projectsSection #projectsSectionBodyTextContainer {
+      margin-top: 3.5em;
+      text-align: center;
+      font-size: 1.4em;
+      padding: 0 1em;
+      font-family: "PT Sans", sans-serif;
+      color: #515151;
+      transition: font-size 0.5s, margin-top 0.5s; }
+  body #skillsSection {
+    background-image: radial-gradient(#494844 40%, #2f2f2f);
+    /* Swiper Object - [Skills Section] */
+    /* [END OF]: Skills Section */ }
+    body #skillsSection #skillsSectionTitleContainer #skillsSectionTitleText {
+      color: #f8f8f8; }
+    body #skillsSection #swiperContainerSkillsSection {
+      max-width: 90%;
+      padding: 3em 0;
+      /* [END OF]: Swiper Object - [Skills Section] */ }
+      body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        padding: 0.5em 0;
+        text-align: center;
+        word-break: break-word; }
+        body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSkillsImageContainer {
+          width: 5em;
+          height: auto;
+          margin: 0 auto 0.5em auto; }
+          body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSkillsImageContainer .swiperSkillsImage {
+            width: 100%;
+            height: 100%; }
+        body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideTitleText {
+          color: #f8f8f8;
+          margin: 0.35em;
+          font-family: "Arimo", sans-serif;
+          font-size: 1.1em;
+          break-word: word-break;
+          transition: font-size 0.5s; }
+        body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideBodyContainer {
+          margin: 2em 0.7em; }
+          body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideBodyContainer .swiperSlideTextHolder {
+            max-width: 90%;
+            margin: 0.2em auto; }
+            body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideBodyContainer .swiperSlideTextHolder .swiperSlideText {
+              color: white;
+              font-family: "PT Sans", sans-serif;
+              font-size: 0.8em;
+              padding: 0;
+              margin: 1em auto;
+              break-word: word-break;
+              transition: font-size 0.5s, margin 0.5s;
+              display: list-item;
+              /* This has to be "list-item"                                               */
+              list-style-type: disc;
+              /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+              list-style-position: inside;
+              /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */ }
+  body #educationSection {
+    background-image: radial-gradient(white 50%, #f8f8f8 140%);
+    /* [END OF]: Education Section */ }
+    body #educationSection #educationPanelsContainer {
+      margin: 0; }
+      body #educationSection #educationPanelsContainer .educationPanel {
+        margin: 5em auto;
+        max-width: 10em;
+        transition: margin 0.5s; }
+        body #educationSection #educationPanelsContainer .educationPanel .educationIconContainer {
+          max-width: 100%;
+          height: auto;
+          margin: 0 auto;
+          padding: 2em;
+          background: linear-gradient(90deg, #abaaaa 50%, #72abeb 50%);
+          border-radius: 100%; }
+          body #educationSection #educationPanelsContainer .educationPanel .educationIconContainer .educationIcon {
+            width: 100%;
+            height: 100%; }
+        body #educationSection #educationPanelsContainer .educationPanel .educationPanelTextContainer {
+          margin: 1em; }
+          body #educationSection #educationPanelsContainer .educationPanel .educationPanelTextContainer .educationPanelText {
+            margin: 0;
+            font-family: "Arimo", sans-serif;
+            font-size: 1em;
+            transition: all 0.5s;
+            text-align: center; }
+          body #educationSection #educationPanelsContainer .educationPanel .educationPanelTextContainer .educationPanelResultText {
+            margin-top: 1em;
+            color: blue;
+            border: 1px solid black;
+            padding: 0.4em;
+            font-family: "PT Sans", sans-serif;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            border-radius: 0.2em;
+            transition: all 0.5s;
+            text-align: center; }
+  body #contactSection {
+    background-image: radial-gradient(white 50%, #f8f8f8 140%);
+    /* [END OF]: Contact Section */ }
+    body #contactSection #contactSectionBodyTextContainer {
+      margin: 1.5em 1em;
+      text-align: center;
+      font-family: "PT Sans", sans-serif;
+      word-break: break-word;
+      transition: font-size 0.5s; }
+      body #contactSection #contactSectionBodyTextContainer #contactSectionBodyText {
+        font-size: 1.1em; }
+      body #contactSection #contactSectionBodyTextContainer #contactSectionEmailText {
+        font-size: 1.3em;
+        text-decoration: underline;
+        color: #2bada5;
+        transition: font-size 0.5s; }
+  body .modal {
+    position: fixed;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    /* Colour to fallback to */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Slightly transparent background, so page can be seen behind the modal */
+    /* [END OF]: Modal */ }
+    body .modal .modalContent {
+      position: relative;
+      background-color: white;
+      margin: 50% auto;
+      padding: 0;
+      border: 1px solid black;
+      width: 80%;
+      box-shadow: 0 2em 8em 0 rgba(100, 100, 100, 0.5);
+      animation-name: animatetop;
+      -webkit-animation-name: animatetop;
+      animation-duration: 0.4s;
+      -webkit-animation-duration: 0.4s; }
+      body .modal .modalContent .modalHeader {
+        padding: 0.5em 1em 0 1em;
+        background-image: radial-gradient(white, #f8f8f8);
+        color: black;
+        text-align: center; }
+        body .modal .modalContent .modalHeader .modalCloseContainer {
+          width: 100%;
+          display: block;
+          text-align: right;
+          padding: 0; }
+          body .modal .modalContent .modalHeader .modalCloseContainer .closeModalButton {
+            color: black;
+            font-size: 5em;
+            padding: 0;
+            margin: 0.5em 0.5em 0.5em 0;
+            font-family: "Arimo", sans-serif;
+            font-weight: bold;
+            transition: color 0.7s; }
+            body .modal .modalContent .modalHeader .modalCloseContainer .closeModalButton:hover {
+              color: #abaaaa;
+              cursor: pointer; }
+        body .modal .modalContent .modalHeader .modalHeaderImageContainer {
+          max-width: 30em;
+          height: auto;
+          margin: 0 auto;
+          position: relative;
+          padding: 0 3em 4em 3em; }
+          body .modal .modalContent .modalHeader .modalHeaderImageContainer .modalHeaderImage {
+            width: 100%;
+            height: 100%;
+            display: block; }
+      body .modal .modalContent .modalBody {
+        padding: 0 2em 4em 2em;
+        margin: 0;
+        background-image: radial-gradient(white, #f8f8f8); }
+        body .modal .modalContent .modalBody .modalProjectTitleText {
+          color: black;
+          font-family: "Arimo", sans-serif;
+          font-size: 1.3em;
+          text-align: center;
+          margin: 0 auto 1.5em auto;
+          text-decoration: underline;
+          padding: 0;
+          transition: font-size 0.5s; }
+        body .modal .modalContent .modalBody .modalText {
+          color: black;
+          font-family: "PT Sans", sans-serif;
+          text-align: center;
+          font-size: 1.1em;
+          margin: 0;
+          transition: font-size 0.5s; }
+        body .modal .modalContent .modalBody #modalSecondTextSection .googlePlayBadge {
+          width: 90%;
+          height: auto;
+          margin: 1em auto -1em auto; }
+        body .modal .modalContent .modalBody #modalSecondTextSection .gitHubLink .gitHubImage {
+          border: 1px solid #bfbfbf;
+          width: 80%;
+          height: auto;
+          display: block;
+          margin: 2em auto 0 auto;
+          border-radius: 0.5em;
+          transition: background-color 0.5s, border 0.5s, width 0.5s; }
+          body .modal .modalContent .modalBody #modalSecondTextSection .gitHubLink .gitHubImage:hover {
+            background-color: #ebebeb;
+            border: 1px solid #abaaaa; }
+        body .modal .modalContent .modalBody .modalBodyImageContainer {
+          max-width: 30em;
+          height: auto;
+          margin: 4em auto; }
+          body .modal .modalContent .modalBody .modalBodyImageContainer .modalBodyImage {
+            max-width: 100%;
+            max-height: 100%;
+            margin: 0 auto;
+            border-radius: 1.5em; }
+        body .modal .modalContent .modalBody .modalVideoContainer {
+          margin: 0 auto 3.5em auto;
+          width: 90%;
+          height: auto;
+          transition: all 1s;
+          display: block;
+          padding: 0; }
+          body .modal .modalContent .modalBody .modalVideoContainer .modalVideo {
+            width: 100%;
+            height: 100%; }
+        body .modal .modalContent .modalBody .modalButtonLink {
+          text-decoration: none;
+          border: solid 1px green;
+          padding: 0.5em 1.5em;
+          font-family: "PT Sans", sans-serif;
+          font-size: 0.9em;
+          border-radius: 0.5em;
+          transition: background 1s, color 0.5s;
+          color: orange; }
+          body .modal .modalContent .modalBody .modalButtonLink:hover {
+            cursor: pointer;
+            background: #abaaaa;
+            color: white; }
+        body .modal .modalContent .modalBody .modalTextLink {
+          font-weight: bold;
+          transition: color 0.5s; }
+          body .modal .modalContent .modalBody .modalTextLink:hover {
+            cursor: pointer;
+            color: green; }
+      body .modal .modalContent .modalFooter {
+        padding: 0.5em 3em;
+        background-color: #5cb85c;
+        color: white;
+        text-align: center; }
+        body .modal .modalContent .modalFooter .modalFooterTextContainer {
+          margin: 1em; }
+          body .modal .modalContent .modalFooter .modalFooterTextContainer .modalFooterTypeText {
+            font-size: 0.92em;
+            font-family: "Merriweather", serif;
+            margin: 1.5em auto;
+            text-transform: uppercase; }
+          body .modal .modalContent .modalFooter .modalFooterTextContainer .modalFooterDevText {
+            font-size: 0.7em;
+            font-family: "Merriweather", serif;
+            margin: 1em auto 0 auto;
+            padding: 0.5em;
+            text-transform: uppercase;
+            border: solid 1px white;
+            border-radius: 0.2em;
+            max-width: 8em; }
+
+/* Footer Element */
+footer {
+  height: auto;
+  background-color: black;
+  padding: 1em;
+  display: block;
+  /* [END OF]: Footer Element */ }
+  footer #footerElementsHolder {
+    text-align: center; }
+    footer #footerElementsHolder .footerContainer {
+      display: inline-block;
+      margin: 0;
+      padding: 0; }
+    footer #footerElementsHolder .footerText {
+      font-family: "Arimo", sans-serif;
+      margin: 0;
+      padding: 1em;
+      word-break: break-word;
+      font-size: 0.9em; }
+    footer #footerElementsHolder #footerNameContainer #footerNameText {
+      color: white; }
+    footer #footerElementsHolder #footerDateContainer #footerDateText {
+      color: yellow; }
+
+/* BREAKPOINTS */
+/* 1st BREAKPOINT (Very Small PC Browser) */
+@media screen and (min-width: 482px) {
+  /* Section Element - [1st BREAK] */
+  section .sectionTitle {
+    font-size: 3.5em; }
+
+  /* Header Element - [1st BREAK] */
+  header #checkBreakpointContainer #checkBreakpoint {
+    background-color: blue; }
+
+  /* Body Element - [1st BREAK] */
+  body {
+    /* Welcome Section - [1st BREAK] */
+    /* Projects Section - [1st BREAK] */
+    /* Skills Section - [1st BREAK] */
+    /* Education Section - [1st BREAK] */
+    /* Contact Section - [1st BREAK] */
+    /* Modal - [1st BREAK] */
+    /* [END OF]: Body Element - [1st BREAK] */ }
+    body #welcomeSection {
+      padding: 12em 0;
+      /* [END OF]: Welcome Section - [1st BREAK] */ }
+      body #welcomeSection #logoTitleTextContainer {
+        width: 22em; }
+        body #welcomeSection #logoTitleTextContainer .logoTable {
+          font-size: 3.2em; }
+      body #welcomeSection #welcomeDescriptionTextContainer {
+        margin: 4.5em 4em 0 4em; }
+        body #welcomeSection #welcomeDescriptionTextContainer #welcomeDescriptionText {
+          font-size: 1.8em; }
+    body #projectsSection {
+      /* Projects Section Body Elements Container - [1st BREAK] */
+      /* [END OF]: Projects Section - [1st BREAK] */ }
+      body #projectsSection #projectsSectionBodyElementsContainer {
+        /* [END OF]: Projects Section Body Elements Container - [1st BREAK] */ }
+        body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer {
+          max-width: 40em;
+          margin: 0 auto; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer .projectsTabExpandIcon {
+            font-size: 2em; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer .projectsTabHeaderText {
+            font-size: 2em; }
+        body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer {
+          max-width: 40em;
+          margin: 0 auto; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels {
+            margin: 1em; }
+            body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelTextContainer .panelTitle {
+              font-size: 1.6em; }
+            body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelTextContainer .panelParagraph {
+              font-size: 1.4em; }
+      body #projectsSection #projectsSectionBodyTextContainer {
+        font-size: 1.8em; }
+    body #skillsSection {
+      /* Swiper Object - [Skills Section] - [1st BREAK] */
+      /* [END OF]: Skills Section - [1st BREAK] */ }
+      body #skillsSection #swiperContainerSkillsSection {
+        /* [END OF]: Swiper Object - [Skills Section] - [1st BREAK] */ }
+        body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideTitleText {
+          font-size: 1.6em; }
+        body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideBodyContainer {
+          margin: 2em; }
+          body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideBodyContainer .swiperSlideTextHolder .swiperSlideText {
+            font-size: 1.3em;
+            margin: 2em auto; }
+    body #educationSection {
+      /* [END OF]: Education Section - [1st BREAK] */ }
+      body #educationSection #educationPanelsContainer .educationPanel {
+        margin: 7em auto;
+        max-width: 15em; }
+        body #educationSection #educationPanelsContainer .educationPanel .educationIconContainer {
+          padding: 3em;
+          width: 10em; }
+        body #educationSection #educationPanelsContainer .educationPanel .educationPanelTextContainer .educationPanelText {
+          margin-top: 1.5em;
+          font-size: 1.5em; }
+        body #educationSection #educationPanelsContainer .educationPanel .educationPanelTextContainer .educationPanelResultText {
+          margin-top: 1.2em;
+          font-size: 1em; }
+    body #contactSection {
+      /* [END OF]: Contact Section - [1st BREAK] */ }
+      body #contactSection #contactSectionBodyTextContainer {
+        margin: 3em 2em; }
+        body #contactSection #contactSectionBodyTextContainer #contactSectionBodyText {
+          font-size: 1.6em; }
+        body #contactSection #contactSectionBodyTextContainer #contactSectionEmailText {
+          font-size: 1.9em; }
+    body .modal {
+      /* [END OF]: Modal - [1st BREAK] */ }
+      body .modal .modalContent .modalBody {
+        padding: 0 5em 4em 5em; }
+        body .modal .modalContent .modalBody .modalProjectTitleText {
+          font-size: 1.8em; }
+        body .modal .modalContent .modalBody .modalText {
+          font-size: 1.4em; }
+        body .modal .modalContent .modalBody #modalSecondTextSection .googlePlayBadge {
+          width: 9em; }
+        body .modal .modalContent .modalBody #modalSecondTextSection .gitHubLink .gitHubImage {
+          width: 8em; }
+        body .modal .modalContent .modalBody .modalButtonLink {
+          font-size: 1em; }
+      body .modal .modalContent .modalFooter .modalFooterTextContainer .modalFooterTypeText {
+        font-size: 1.1em; }
+      body .modal .modalContent .modalFooter .modalFooterTextContainer .modalFooterDevText {
+        font-size: 0.75em; }
+
+  /* Footer Element - [1st BREAK] */
+  footer {
+    /* [END OF]: Footer Element - [1st BREAK] */ }
+    footer #footerElementsHolder .footerText {
+      padding: 1em;
+      font-size: 1em; }
+
+  /* [END OF]: 1st BREAKPOINT */ }
+/* 2nd BREAKPOINT */
+@media screen and (min-width: 920px) {
+  /* Header Element - [2nd BREAK] */
+  header #checkBreakpointContainer #checkBreakpoint {
+    background-color: green; }
+
+  /* [END OF]: 2nd BREAKPOINT */ }
+/* 3rd BREAKPOINT */
+@media screen and (min-width: 1200px) {
+  /* Header Element - [3rd BREAK] */
+  header #checkBreakpointContainer #checkBreakpoint {
+    background-color: yellow; }
+
+  /* Body Element - [3rd BREAK] */
+  body {
+    /* Projects Section - [3rd BREAK] */
+    /* Skills Section - [3rd BREAK] */
+    /* Education Section - [3rd BREAK] */
+    /* [END OF]: Body Element - [3rd BREAK] */ }
+    body #projectsSection {
+      /* Projects Section Body Elements Container - [3rd BREAK] */
+      /* [END OF]: Projects Section - [3rd BREAK] */ }
+      body #projectsSection #projectsSectionBodyElementsContainer {
+        /* [END OF]: Projects Section Body Elements Container - [3rd BREAK] */ }
+        body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer {
+          max-width: 40em;
+          margin: 0 auto; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer .projectsTabExpandIcon {
+            font-size: 1.8em; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabHeaderContainer .projectsTabHeaderText {
+            font-size: 1.8em; }
+        body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer {
+          margin: 0 auto;
+          max-width: 67.2em; }
+          body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels {
+            margin: 1em auto;
+            padding: 0; }
+            body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel {
+              display: inline-block;
+              width: 20em;
+              margin: 1em; }
+              body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelImageContainer {
+                height: 10em; }
+              body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelTextContainer {
+                height: 6em;
+                overflow: hidden; }
+                body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelTextContainer .panelTitle {
+                  font-size: 1.25em; }
+                body #projectsSection #projectsSectionBodyElementsContainer .projectsTabPanelsContainer .projectsPanels .projectsSinglePanel .panelTextContainer .panelParagraph {
+                  font-size: 1.05em; }
+      body #projectsSection #projectsSectionBodyTextContainer {
+        font-size: 1.6em; }
+    body #skillsSection {
+      /* Swiper Object - [Skills Section] - [3rd BREAK] */
+      /* [END OF]: Skills Section - [3rd BREAK] */ }
+      body #skillsSection #swiperContainerSkillsSection {
+        /* [END OF]: Swiper Object - [Skills Section] - [3rd BREAK] */ }
+        body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideTitleText {
+          font-size: 1.4em; }
+        body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideBodyContainer {
+          margin: 2em 1.2em; }
+          body #skillsSection #swiperContainerSkillsSection #swiperWrapperSkillsSection .swiper-slide .swiperSlideBodyContainer .swiperSlideTextHolder .swiperSlideText {
+            font-size: 1.1em;
+            margin: 2em auto; }
+    body #educationSection {
+      /* [END OF]: Education Section - [3rd BREAK] */ }
+      body #educationSection #educationPanelsContainer {
+        max-width: 73em;
+        margin: 0 auto; }
+        body #educationSection #educationPanelsContainer .educationPanel {
+          margin: 7em 5.9em;
+          max-width: 12em;
+          display: inline-block; }
+          body #educationSection #educationPanelsContainer .educationPanel .educationIconContainer {
+            padding: 2em; }
+          body #educationSection #educationPanelsContainer .educationPanel .educationPanelTextContainer .educationPanelText {
+            font-size: 1.2em; }
+          body #educationSection #educationPanelsContainer .educationPanel .educationPanelTextContainer .educationPanelResultText {
+            margin-top: 1.2em;
+            padding: 0.4em 0;
+            font-size: 0.9em; }
+
+  /* [END OF]: 3rd BREAKPOINT */ }
+
+/*# sourceMappingURL=style.css.map */
